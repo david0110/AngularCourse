@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row" style="width: 100%">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card text-center bg-transparent border-white text-white" style="padding: 20px;">
+                <h3>Registrate</h3>
+                <br>
+                <form [formGroup]="registerForm" (ngSubmit)="registrarUsusario()">
+                    <div class="form-group mb-2" style="text-align: start ;">
+                        <input type="text" class="form-control" placeholder="Usuario" formControlName="usuario">
+                        <span class="text-danger m-2"   
+                            *ngIf="registerForm.get('usuario')?.hasError('required') && registerForm.get('usuario')?.touched">                 
+                            El usuario <strong> es requerido</strong>
+                        </span>
+                    </div>
+                    <div class="form-group mb-2"  style="text-align: start ;">
+                        <input type="password" class="form-control" placeholder="Contraseña" formControlName="password">
+                        <span class="text-danger m-2"
+                            *ngIf="registerForm.get('password')?.hasError('required') && registerForm.get('password')?.touched">
+                            La Contraseña <strong> es requerida</strong>
+                        </span>
+                        <span class="text-danger m-2"
+                            *ngIf="registerForm.get('password')?.hasError('minLength') && registerForm.get('password')?.touched">
+                            La Contraseña debe tener <strong>como minimo 4 caracteres</strong>
+                        </span>
+                    </div>
+                    <div class="form-group mb-2">
+                        <input type="password" class="form-control" placeholder="Repetir Contraseña" formControlName="repPassword">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-xl" type="submit">Aceptar</button>
+                        <button class="btn btn-danger btn-xl" routerLink="/login">Volver</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
