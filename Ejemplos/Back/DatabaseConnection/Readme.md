@@ -9,6 +9,7 @@ This is the template and instructions on how to create the connection to the dat
 	* Microsoft.EntityFrameworkCore.Design
 	* Npgsql.EntityFrameworkCore.PostgreSQL
 	Right click on the reference item:
+	
 ![Screenshot](img/ManageNugetPackages.png)
 	Go to `Browse` tab and start typoing the name of the packages listed above, Install one by one, acept the terms and let it finish:
 ![Screenshot](img/ManageNugetPackagesInstall.png)
