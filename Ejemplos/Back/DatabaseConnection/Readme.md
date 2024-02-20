@@ -12,7 +12,7 @@ This is the template and instructions on how to create the connection to the dat
 	
 ![Screenshot](img/ManageNugetPackages.png)
 
-Go to `Browse` tab and start typoing the name of the packages listed above, Install one by one, acept the terms and let it finish:
+Go to `Browse` tab and start typing the name of the packages listed above, Install one by one, acept the terms and let it finish:
 ![Screenshot](img/ManageNugetPackagesInstall.png)
 	
 After installing all the dependencies you should see them all in the `Installed` tab:
@@ -36,7 +36,7 @@ Also, a new folder should be created with the DB conection and the models in it.
 
 3. To use the connection to the database you should create a instance of the DBContext. 
 After you create the DBContext instance you should be able to access to every table you have in you database. Ex: `db.MyTable`
-Then you should use the main operations on the tables:
+Then you can use the main operations on the tables:
 	
 	1. **List**: In order to get all the entries from the table (SELECT * FROM), you should use the `.ToList()` method. 
 		
