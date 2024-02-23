@@ -25,7 +25,7 @@ After installing all the dependencies you should see them all in the `Installed`
 
 Run the command to generate the models, based on the database: 
 ```
-Scaffold-DbContext "Host=reciplastk.cty0a2ewmeb5.us-east-1.rds.amazonaws.com;Database=Reciplastk;Username=postgres;Password=Admin123" Npgsql.EntityFrameworkCore.PostgreSQL -o Models -DataAnnotations
+Scaffold-DbContext "Host=reciplastk.cty0a2ewmeb5.us-east-1.rds.amazonaws.com;Database=Reciplastk;Username=postgres;Password=Admin123" Npgsql.EntityFrameworkCore.PostgreSQL -o DataAccess -DataAnnotations
 ```
 You should see the following results.
 ![Screenshot](img/CommandSuccessful.png)
@@ -37,7 +37,7 @@ Also, a new folder should be created with the DB conection and the models in it.
 Note: If you changed your database and want those changes to be reflected on the code, just execute the previous command but adding the flag `-Force` at the end. 
 Or you can also copy and paste the next command:
 ```
-Scaffold-DbContext "Host=reciplastk.cty0a2ewmeb5.us-east-1.rds.amazonaws.com;Database=Reciplastk;Username=postgres;Password=Admin123" Npgsql.EntityFrameworkCore.PostgreSQL -o Models -DataAnnotations -Force
+Scaffold-DbContext "Host=reciplastk.cty0a2ewmeb5.us-east-1.rds.amazonaws.com;Database=Reciplastk;Username=postgres;Password=Admin123" Npgsql.EntityFrameworkCore.PostgreSQL -o DataAccess -DataAnnotations -Force
 ```
 
 3. To use the connection to the database you should create a instance of the DBContext. 
