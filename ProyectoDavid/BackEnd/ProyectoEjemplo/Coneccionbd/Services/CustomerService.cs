@@ -20,7 +20,7 @@ namespace Coneccionbd.Services
             Console.Write("| Name ");
             Console.Write("| Last Name ");
             Console.Write("| Adress |");
-            Console.WriteLine("");
+            Console.WriteLine(" ");
             
             foreach (var item in customerList)
             {
