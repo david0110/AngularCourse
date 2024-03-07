@@ -21,11 +21,11 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <button class="btn btn-primary mx-2 btn-xl" type="submit" [disabled]="login.invalid">Aceptar</button>
-                        <button class="btn btn-danger btn-xl" routerLink="/bienvenidos">Cancelar</button>
+                        <button class="btn btn-primary mx-2 btn-xl" type="submit" [disabled]="login.invalid" routerLink="/dashboard">Aceptar</button>
+                        <button class="btn btn-danger btn-xl" routerLink="/inicio">Cancelar</button>
                     </div>
                     <div class="form-group mt-2">
-                        <a style="color: rgb(192, 98, 192); cursor: pointer;" routerLink="/register">Crear cuenta</a>
+                        <a style="color: rgb(192, 98, 192); cursor: pointer;" routerLink="/inicio/register">Crear cuenta</a>
                     </div>
                 </form>
             </div>
