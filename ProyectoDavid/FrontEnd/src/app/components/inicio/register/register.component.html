@@ -6,14 +6,28 @@
                 <br>
                 <form [formGroup]="registerForm" (ngSubmit)="registrarUsusario()">
                     <div class="form-group mb-2" style="text-align: start ;">
-                        <input type="text" class="form-control" placeholder="Usuario" formControlName="usuario">
-                        <span class="text-danger m-2"   
-                            *ngIf="registerForm.get('usuario')?.hasError('required') && registerForm.get('usuario')?.touched">                 
+                        <input type="text" class="form-control p" placeholder="Name" formControlName="name">
+                        <Span class="text-danger m-2"
+                            *ngIf="registerForm.get('name')?.hasError('required')&& registerForm.get('name')?.touched">
+                            El nombre del empleado <strong> es requerido</strong>
+                        </Span>
+                    </div>
+                    <div class="form-group mb-2" style="text-align: start ;">
+                        <input type="text" class="form-control p" placeholder="LastName" formControlName="lastName">
+                        <Span class="text-danger m-2"
+                            *ngIf="registerForm.get('lastName')?.hasError('required')&& registerForm.get('lastName')?.touched">
+                            El apellido del empleado <strong> es requerido</strong>
+                        </Span>
+                    </div>
+                    <div class="form-group mb-2" style="text-align: start ;">
+                        <input type="text" class="form-control p" placeholder="Usuario" formControlName="usuario">
+                        <span class="text-danger m-2"
+                            *ngIf="registerForm.get('usuario')?.hasError('required') && registerForm.get('usuario')?.touched">
                             El usuario <strong> es requerido</strong>
                         </span>
                     </div>
-                    <div class="form-group mb-2"  style="text-align: start ;">
-                        <input type="password" class="form-control" placeholder="Contraseña" formControlName="password">
+                    <div class="form-group mb-2" style="text-align: start ;">
+                        <input type="password" class="form-control p" placeholder="Contraseña" formControlName="password">
                         <span class="text-danger m-2"
                             *ngIf="registerForm.get('password')?.hasError('required') && registerForm.get('password')?.touched">
                             La Contraseña <strong> es requerida</strong>
@@ -24,14 +38,15 @@
                         </span>
                     </div>
                     <div class="form-group mb-2" style="text-align: start ;">
-                        <input type="password" class="form-control" placeholder="Repetir Contraseña" formControlName="repPassword">
+                        <input type="password" class="form-control p" placeholder="Repetir Contraseña"
+                            formControlName="repPassword">
                         <span class="text-danger m-2" *ngIf="registerForm.hasError('notSame')">
                             Las Contraseñas son <strong>distintas</strong>
                         </span>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary btn-xl" type="submit">Aceptar</button>
-                        <button class="btn btn-danger btn-xl" routerLink="/inicio/login">Volver</button>
+                        <button class="btn btn-primary btn-xl p2" type="submit" [disabled]="registerForm.invalid">Aceptar</button>
+                        <button class="btn btn-danger btn-xl p2" routerLink="/inicio/login">Volver</button>
                     </div>
                 </form>
             </div>

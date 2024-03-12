@@ -17,3 +17,13 @@ h3{
     background-color: rgb(114, 14, 114);
     border-width: 2px;
 }
+.p{
+    font-family: 'Aguafina Script', cursive;
+    font-size: 21px;
+    color: rgb(151, 151, 151);
+}
+.p2{
+    font-family: 'Aguafina Script', cursive;
+    font-size: 20px;
+    color: rgb(238, 238, 238);
+}

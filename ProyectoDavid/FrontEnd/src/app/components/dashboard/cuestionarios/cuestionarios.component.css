@@ -1,0 +1,27 @@
+.p{
+    font-family: 'Aguafina Script', cursive;
+    font-size: 3em;
+    color: rgb(37, 37, 37);
+}
+p{
+    font-family: 'Aguafina Script', cursive;
+    font-size: 2em;
+    color: rgb(95, 93, 90);
+}
+.jumbotron{
+    background-color: white;
+}
+.btn-cues{
+    padding: 1rem 10rem;
+}
+.btn-xl{
+    background-color: blueviolet;
+    border-color: black;
+    margin: 10px;
+    padding: 1rem 2 rem;
+    border-radius: 100px;
+}
+.btn-xl:hover{
+    background-color: rgb(114, 14, 114);
+    border-width: 4px;
+}
